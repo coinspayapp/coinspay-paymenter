@@ -1,0 +1,6 @@
+/vendor/
+/dist/
+.phpunit.result.cache
+.phpunit.cache/
+/composer.lock
+__pycache__/

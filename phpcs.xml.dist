@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<ruleset name="CoinsPay Paymenter">
+    <description>The gateway runs on Paymenter 1.4+ with PHP 8.2 to 8.5.</description>
+    <file>CoinsPay</file>
+    <arg name="extensions" value="php"/>
+    <arg value="p"/>
+    <config name="installed_paths" value="vendor/phpcompatibility/php-compatibility"/>
+    <config name="testVersion" value="8.2-"/>
+    <rule ref="PHPCompatibility"/>
+    <rule ref="Generic.PHP.DisallowShortOpenTag"/>
+    <rule ref="Generic.Files.ByteOrderMark"/>
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\n"/>
+        </properties>
+    </rule>
+</ruleset>
